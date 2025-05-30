@@ -37,6 +37,8 @@ module memory_controller(
         csr_rd_data = 32'd0;
         if (csr_rd_en) begin
             unique case (csr_addr)
+                //unique case is often used when you want to ensure that a case statement is acting like a one-hot decoder, 
+                //meaning that only one bit is set at a time.
                 MEM_CTRL_ADDR   : csr_rd_data = mem_ctrl_reg;
                 MEM_STATUS_ADDR : csr_rd_data = mem_status_reg;
                 MEM_CFG_ADDR    : csr_rd_data = mem_cfg_reg;
