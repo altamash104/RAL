@@ -13,7 +13,7 @@ Example: with RAL
 
     my_reg_model.ctrl_reg.write(status, 8'hAA);
 
-Here, ctrl_reg is a register and write() is a method. You don’t need to find the address or manually toggle the signals. 
+Here, ctrl_reg is a register and write() is a method. You don’t need to find the address or manually toggle the signals(it will be automatically retrive from address map through reg model). 
 Everything is happening through abstraction.Means RAL hide all the details and left you with minimal work.
 
 ->In RAL  if we wish we don't have to do all the transaction we can have backdoor access of the hardware register if we are not using frontdoor access it give us flexibility.
