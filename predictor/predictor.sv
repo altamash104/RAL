@@ -139,3 +139,14 @@ module tb;
     run_test("test");
   end
 endmodule
+////////////////////////////////////////
+/*
+simulation output
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO testbench.sv(35) @ 0: uvm_test_top.e.agt.seqr@@gen [SEQ] Sending TX to SEQR: addr = 3  data = 8
+UVM_INFO testbench.sv(59) @ 0: uvm_test_top.e.agt.drv [DRV] Recv. TX from SEQR addr = 3 data = 8
+UVM_INFO testbench.sv(61) @ 100: uvm_test_top.e.agt.drv [DRV] Applied Stimuli to DUT -> Sending REQ response to SEQR
+UVM_INFO testbench.sv(40) @ 100: uvm_test_top.e.agt.seqr@@gen [SEQ] After get_response: addr = 3  data = 8
+UVM_INFO /apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 100: reporter [UVM/REPORT/SERVER]
+*/
