@@ -4,6 +4,7 @@ Predictor is used to update the mirror and desired value,there are three type of
 2.Explicit prediction-here we use an independent component predictor which will call the predict method to update the desired and mirror value.
 3.Passive Predictor-Here we donot use any reg sequence instead we use bus sequence and predictor wil capture response and uodate the mirror and desire value.
 */
+//This code is simple implementation of implicit predictor,using by bi-dirctional property of driver sequencer.
 class generator extends uvm_sequence #(transaction);
   `uvm_object_utils(generator)
   
@@ -28,8 +29,7 @@ class generator extends uvm_sequence #(transaction);
   endtask
 endclass
 
-/////////////////////////////////driver
-
+//driver
 
 class driver extends uvm_driver#(transaction);
   `uvm_component_utils(driver)
