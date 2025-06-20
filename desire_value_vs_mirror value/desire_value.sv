@@ -421,7 +421,15 @@ module tb;
     $dumpfile("dump.vcd");
     $dumpvars;
   end
-
-  
 endmodule
+
+////////////////////////////////////////////////////////////////////////////
+/*
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO testbench.sv(206) @ 0: uvm_test_top.env.agent_inst.seqr@@trseq [SEQ] Desired Value : 0
+UVM_INFO testbench.sv(213) @ 0: uvm_test_top.env.agent_inst.seqr@@trseq [SEQ] Desired Value : 17
+UVM_INFO testbench.sv(65) @ 30: uvm_test_top.env.agent_inst.d [DRV] Data Write -> Wdata : 17
+UVM_INFO /apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 230: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 230: reporter [UVM/REPORT/SERVER] 
+*/
 
