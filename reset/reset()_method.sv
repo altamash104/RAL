@@ -1,3 +1,11 @@
+/*
+has_reset-It will check whether we have specific reset value for the register,if it is there then it will be high else low.
+get_reset-This will return the reset value that we specify in a register.
+set_reset-This will set modify the specific reset value for the register.
+reset-It reset the register and update the desire and mirror value with specific reset value set in a register.
+*/
+
+
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 
