@@ -18,8 +18,8 @@ Everything is happening through abstraction.Means RAL hide all the details and l
 
 ->In RAL  if we wish we don't have to do all the transaction we can have backdoor access of the hardware register if we are not using frontdoor access it give us flexibility.
     
-    reg_ints.write(status,data,UVM_FRONTDOOR/UVM_BACKDOOR)
-  Note-Backdoor access is used for debugging and loading the elf in to the memor
+  reg_ints.write(status,data,UVM_FRONTDOOR/UVM_BACKDOOR)
+  Note-Backdoor access is used for debugging and loading the .hex file in to the memory
       -Frontdoor access is used in post silicon verification 
 
 -> Minimum requirements for including RAL in testbench.
