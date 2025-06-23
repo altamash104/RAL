@@ -5,7 +5,7 @@ Predict_method-
 3.It returns true(bcz it "bit type") if prediction was successful for each field in the register.
 
 Mirror_method-
-1.It perform read operation.
+1.It perform read transaction to dut.
 2.After reading it will perform comparison between existing mirror value with current mirror value if both of them are equal.
 then it will update the mirror value with current value,other wise it will throw and error.
 */
