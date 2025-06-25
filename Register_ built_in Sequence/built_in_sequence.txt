@@ -1,0 +1,9 @@
+uvm_reg_hw_reset_seq = check that the hardware register reset value matches the value specified in the register model.
+uvm_reg_single_bit_bash_seq =writes, then check_reads 1's and 0's to all bits of the selected register that have read-write access.
+uvm_reg_bit_bash_seq= Execute the uvm_reg_single_bit_bash_seq for each register in the selected block and any sub-block it may contains.
+uvm_reg_single_access_seq = write to the selected register via the frontdoor,checks the value is correctly written via backdoor, then writes  value via the backdoor and checks that it
+                            can be read back correctly via the frontdoor.Repeated for each address map that the register is present in.Requires that the backdoor hdl_path has been specified.
+uvm_reg_access_seq= Execute the uvm_reg_single_access_seq for each register accessible via the selected block.
+uvm_reg_shared_access_seq= for each map containing the register,writes to the selected register in one map, then check-reads it back from all maps from ehich it is accessible .
+                            Requires that the selected register has been added to multiple address maps.
+                            
